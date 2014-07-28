@@ -1,0 +1,40 @@
+Hey Grant, 
+
+We just heard back from Ian, apologies for the delay.  He thought the
+call went well and has asked us to pass on that information he
+mentioned.  Once we have this sent back he’ll schedule an on-site!
+ 
+Attached is a “programming test” and here are the instructions:
+ 
+Please write a simple application which turns an RSS feed into a
+Pinterest-style flowing three-column display.  Each entry should
+contain the picture from each feed item along with some of the
+text. Use any CSS/JS framework you like.
+ 
+Implementation must include the following:
+* OOP
+* Separate view and page controller
+* HTML5 and CSS
+* Safe output handling
+ 
+Bonus points for:
+
+* Image extracted from description and displayed discretely
+
+* Successful implementation of left-to-right flow that appends newest
+  entries to the shortest column
+
+* Delivery via Github or Bitbucket
+ 
+Here are some good source feeds:
+http://www.woot.com/blog/feed.rss
+http://www.tuaw.com/rss.xml
+http://betanews.com/feed/
+ 
+Let me know if you have any questions!  Per Ian this shouldn’t take
+too long, maybe an hour +/-.
+ 
+Thanks!
+ 
+MEREDITH WELLNITZ– Client Services Manager
+p:  425-777-4917 | c:  206-992-8237 | f:  206-299-3430

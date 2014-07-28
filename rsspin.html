@@ -1,0 +1,43 @@
+<!doctype html>
+
+    <html lang="en">
+    <head>
+    <meta charset="utf-8">
+
+    <title>RSS PIntertest cheap</title>
+    <meta name="description" content="RSS Pin">
+    <meta name="author" content="Grant Tegtmeier">
+
+    <link rel="stylesheet" href="rsspin.css">
+
+</head>
+
+    <body>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="rsspininit.php"></script>
+    <script src="rsspin.js"></script>
+
+    <div id="pagectl">
+      <form id="pager">
+	URL:<input type="text" name="pageurl" id="pageurl" value="http://www.woot.com/blog/feed.rss" size="50">
+	<div id="urlerr"></div>
+
+	<input type="submit" value="Read URL">
+	Show:
+	<input type="checkbox" name="sumImgUrl" checked> Image
+	<input type="checkbox" name="sumDate" checked> Date
+	<input type="checkbox" name="sumDescription"> Description
+	<input type="checkbox" name="sumLink"> Link
+
+	<div id="chaninfo"></div>
+      </form>
+    </div>
+
+    <div id="columns">
+      Loading...
+    </div>
+
+  </body>
+
+</html>
