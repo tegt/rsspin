@@ -23,7 +23,8 @@ Bonus points for:
 * Delivery via Github or Bitbucket
  
 Here are some good source feeds:
-http://www.woot.com/blog/feed.rss
-http://www.tuaw.com/rss.xml
-http://betanews.com/feed/
+
+* http://www.woot.com/blog/feed.rss
+* http://www.tuaw.com/rss.xml
+* http://betanews.com/feed/
  

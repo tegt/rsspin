@@ -115,8 +115,8 @@ function adjustSecs() {
 }
 
 function startAdjustTimer(ticks) {
-    adjustTimer = setInterval(function(){adjustSecs()}, 333);
-    adjustTicks = Math.max(adjustTicks,ticks*3); // take longer not less
+    adjustTimer = setInterval(function(){adjustSecs()}, 250);
+    adjustTicks = Math.max(adjustTicks,ticks*4); // take longer not less
 }
 
 
