@@ -2,8 +2,8 @@
 /** @brief Rss parsing class builds on SimpleXMLElement to create from an RSS
  * srtucture from a http URL only.
  *
- * Construction results in a SimpleXMLElement tree. Methods returning a
- * JSON string of channel info and item content are provided.
+ * Construction results in a SimpleXMLElement tree. Methods return a
+ * simple object suitable for JSON string encoding.
  *
  * Throws exceptions as noted in constructor and methods.
  */
@@ -51,11 +51,11 @@ class RssXml {
         }
     }
 
-    /** @brief Fetch a select set of channel values as a json object.
+    /** @brief Fetch a select set of channel values as a simple object.
      *
      *  Throws an exception if rss XML wasn't read
      *
-     *  @returns A JSON encoded object for the channel
+     *  @returns A object suitable for json_encode
      */
     function channelInfo() {
         $this->objectReady();
@@ -108,7 +108,7 @@ class RssXml {
     /** Include date in JSON summary item. Note date is reformatted for readibility I like. */
     static $sumDate = 0x08;
 
-    /** Include img-url in JSON summary item.  N.B. this option also
+    /** Include img-url in the summary item.  N.B. this option also
      *  removes the image tag from the description. There is no
      *  attempt to properly use the media tag because it so rarly
      *  occurs.
@@ -119,15 +119,15 @@ class RssXml {
     static $sumAll = 0x1F;
 
 
-    /** @brief Summerize the RSS channel info as a JSON string.
+    /** @brief Summerize the RSS channel info.
      *
      *  Throws an exception if rss XML wasn't read
      *
      *  @param $options RssXml::sum... constant bits added to select
      *  options. Default sumAll
      *
-     *  @returns A JSON encoded array of objects for each channel item
-     *  as selected by options.
+     *  @returns An array of objects for each channel item as selected
+     *  by options.
      */
     function itemSummary( $options = self::sumAll ) {
 

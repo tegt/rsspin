@@ -102,6 +102,10 @@ $(document).ready(function() {
 	startAdjustTimer(1); // debounce sizing for a second
     });
 
+    $('[name*="sum"]').change(function() {
+	$('#pageurl').submit();
+    });
+
 });
 
 // sad hack for deferred image load post ready
